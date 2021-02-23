@@ -24,10 +24,19 @@ ul{
     
 }
 li{
-    display: inline-block;  
-   
+    display: inline-block;     
         margin-right: 20px ;
-    border: 1px solid black; 
-  
+    border: 1px solid black;  
 
+}
+/*********************   hebergements   *********************/
+#hebergements article{
+    border:1px solid black;
+    height: 200px;
+    width: 300px;
+}
+#hebergements article img{
+    border:1px solid black;
+    height: 100px;
+    width: 200px;
 }
