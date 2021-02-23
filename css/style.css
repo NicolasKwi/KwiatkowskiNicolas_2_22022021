@@ -1,29 +1,30 @@
-
+body{
+    font-family: "Raleway", Arial, sans-serif;
+    font-size: 0.6em;
+}
 
 
 /*********************   header   *********************/
-body{
-    font-family: Raleway, serif;
-}
+
 header {
   display: flex;
-/*align-items: center;*/
-margin: 0px;
-padding: 0px;
+  flex-wrap: wrap;
+align-content: flex-start;
 border: 1px solid black; 
 }
 
-#logo:nth-child(1){
+#presentation:nth-child(1){
     flex: 2;
+    min-width: 300px;  
 }
+
 ul{
     list-style-type: none;  
     border: 1px solid black; 
     
 }
 li{
-    display: inline-block; 
-   
+    display: inline-block;  
    
         margin-right: 20px ;
     border: 1px solid black; 
