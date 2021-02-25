@@ -1,42 +1,99 @@
-body{
-    font-family: "Raleway", Arial, sans-serif;
-    font-size: 0.6em;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+/* html{
+    font-size: 1rem;
+}  */
+
+body {
+  font-family: "Raleway", Arial, sans-serif;
+  font-size: 1rem;
+}
+
+.gras{
+  font-weight: bold;
+}
 
 /*********************   header   *********************/
 
-header {
+#logo {
+  flex: 2;
+  min-width: 300px;
+  margin: 20px;
+}
+
+#navigation {
   display: flex;
   flex-wrap: wrap;
-align-content: flex-start;
-border: 1px solid black; 
-}
-
-#presentation:nth-child(1){
-    flex: 2;
-    min-width: 300px;  
-}
-
-ul{
-    list-style-type: none;  
-    border: 1px solid black; 
-    
-}
-li{
-    display: inline-block;     
-        margin-right: 20px ;
-    border: 1px solid black;  
+  height: 100px;
 
 }
-/*********************   hebergements   *********************/
-#hebergements article{
-    border:1px solid black;
-    height: 200px;
-    width: 300px;
+
+nav {
+  margin-right: 20px;
 }
-#hebergements article img{
-    border:1px solid black;
-    height: 100px;
-    width: 200px;
+ul {
+  list-style-type: none;
+  /* border: 1px solid black; */
+}
+
+li {
+  float: left;
+}
+li a {
+  display: block;
+  padding: 30px 10px 5px 10px;
+  width: 130px;
+
+  text-decoration: none;
+  text-align: center;
+  color: black;
+
+  /* border: 1px solid red;    */
+}
+li a:hover {
+  /* border: 1px solid red;  */
+  border-top: 2px solid #0065fc;
+  color: #0065FC;
+  padding-top: 28px;
+}
+#inscrire {
+  margin-right: 20px;
+  padding-top: 30px;
+}
+#inscrire a {
+  text-decoration: none;
+  color: #0065FC;
+}
+
+/*********************   corps page   *********************/
+
+
+
+
+
+
+
+/*********************   footer   *********************/
+footer {
+  border: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  /* size: page-size; */
+  font-size: 0.8rem;
+}
+footer div {
+  margin: 20px 70px 20px 20px;
+}
+footer h1 {
+  margin-bottom: 10px;
+}
+footer p {
+  margin-top: 8px;
+}
+footer a {
+  text-decoration: none;
 }
