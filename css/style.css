@@ -319,6 +319,7 @@ h1 {
 #activites {
   margin-top: 60px;
   height: 500px;
+  max-width: 1340px;
   /* border: 1px solid black; */
 }
 #liste_activites{
