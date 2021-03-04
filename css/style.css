@@ -62,29 +62,32 @@ h1 {
   /* couleur gris pour le fond des blocs de la charte*/
   color: #f2f2f2;
 }
-.vignette_shadow{
+.vignette_shadow {
   box-shadow: 2px 5px 10px rgb(240, 240, 240);
 }
-
+/* .rate {
+  margin-top: auto;
+} */
 /*********************   header   *********************/
-
+header {
+  /* border: 1px solid black;  */
+}
 #navigation {
   display: flex;
   flex-wrap: wrap;
-  /* height: 100px; */
   margin-left: 2px;
   /* border: 1px solid black; */
 }
 #bloc_logo {
   flex: 2;
-  min-width: 300px;
-  height: 45px;
+  min-width: 300px; /* a regler pour le responsive*/
   margin-top: 47px;
   /* border: 1px solid black; */
 }
 #bloc_logo img {
   margin-left: 2px;
   width: 97px;
+  /* border: 1px solid black; */
 }
 #navigation li {
   display: inline-block;
@@ -119,14 +122,13 @@ h1 {
 #recherche {
   display: flex;
   height: 50px;
-  width: 420px;
+  max-width: 420px;
 }
 .demi_cercle {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* height: 50px;         */
-  width: 50px;
+  width: 10%;
   background-color: #f2f2f2;
   border-radius: 15px 0px 0px 15px;
 }
@@ -138,12 +140,13 @@ h1 {
   border-right: none;
   padding-left: 15px;
   padding-right: 2px;
-  width: 243px;
+
+  width: 60%;
   font-family: "Raleway", sans-serif, Arial;
   font-size: 1rem;
 }
 #lancer_recherche {
-  width: 134px;
+  width: 30%;
   border: none;
   color: #ffffff;
   font-family: "Raleway", sans-serif, Arial;
@@ -156,15 +159,11 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  margin-top: 17px;
+  margin-top: 20px;
 }
 #filtres_label {
-  margin-top: 13px;
+  margin-top: 10px;
   margin-right: 25px;
-}
-.checkbox_label {
-  padding-left: 13px;
-  padding-right: 20px;
 }
 .checkbox_filtre {
   display: flex;
@@ -172,9 +171,9 @@ h1 {
   align-items: center;
   border: 2px solid #f2f2f2;
   border-left: none;
-  margin-top: 13px;
   border-radius: 25px;
   height: 50px;
+  margin-top: 13px;
   margin-right: 20px;
 }
 .cercle {
@@ -186,7 +185,10 @@ h1 {
   background-color: #deebff;
   border-radius: 25px;
 }
-
+.checkbox_label {
+  padding-left: 13px;
+  padding-right: 20px;
+}
 /* -- information filtres */
 #filtres_information {
   display: flex;
@@ -206,13 +208,19 @@ h1 {
 .cerlce_vide i {
   font-size: 12px; /*pour reduire l'icon*/
 }
+
 /* *********************   Section liste_hebergements   ********************* */
 #liste_hebergements {
+  /* section*/
   display: flex;
-  margin-top: 35px;  
+  /* row-gap: 20px; */
+  column-gap: 25px;
+  margin-top: 35px;
 }
 #hebergements {
-  max-width: 880px;
+  /*article*/
+  /* max-width: 880px; */
+  width: 70%;
   border-radius: 15px;
   background-color: #f2f2f2;
 }
@@ -221,30 +229,40 @@ h1 {
   margin-left: 40px;
 }
 #afficher_plus {
-  margin-top: 40px;
-  margin-left: 40px;
-  margin-bottom: 45px;
+  margin: 40px 0px 45px 40px;
 }
 
 #liste_vignette {
   display: flex;
-  margin-left: 40px;
+  margin: 30px 40px 0px 40px;
   flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+  row-gap: 20px;
+  column-gap: 20px;
+  /* border: 1px solid black; */
 }
 /* -- hebergements -- */
 
 .vignette_hebergement {
+  flex: 1 0 250px;
+
+  display: flex;
+  flex-direction: column;
   height: 200px;
   padding: 5px;
-  margin-right: 30px;
-  margin-top: 30px;
+
   border-radius: 15px;
   background-color: white;
+  /* border: 1px solid black; */
 }
 .photo_hebergement {
   border-radius: 15px 15px 0px 0px;
-  width: 236px;
-  height: 115px;
+  /* width: 236px; */
+  width: 100%;
+  /* flex: 0 1 100%; */
+  height: 80%;
+  /* height: 115px; */
   object-fit: cover;
 }
 .description {
@@ -253,65 +271,88 @@ h1 {
   justify-content: space-between;
   margin-top: 5px;
   margin-left: 15px;
-  height: 60px;
+  /* height: 60px; */
+  width: 100%;
+  height: 40%;
 }
-.rate{
-  margin-top: auto;
-}
+
 /*-- Populaires --*/
 #hebergements_populaires {
+  /*aside*/
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
-  width: 420px;
-  max-width: 420px;
-  min-width: 420px;
-  margin-left: 40px;
+  /* flex-direction: column; */
+  /* width: 420px; */
+  width:30%;
+ 
+  /* max-width: 420px; */
+  /* min-width: 420px; */
+  /* margin-left: 40px;
+  margin-right: 40px; */
   background-color: #f2f2f2;
   border-radius: 15px;
+  border: 1px solid black;
 }
 #titre_populaires {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 45px;
-  margin-left: 40px;
-  margin-right: 40px;
+  display: flex; 
+   justify-content: space-between;
+  margin: 45px 40px 0px 40px;  
+  height: 30px;
+  width: 100%;  
 }
-#titre_populaires i{
-  font-size: 1.5rem;
+#titre_populaires i {
+  font-size: 1.5rem; 
 }
 #liste_hebergement_populaires {
   display: flex;
-  flex-direction: column;
-  margin-left: 40px;
-  margin-right: 40px;
-  margin-top: 30px; 
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  /* margin: 30px 40px 0px 40px; */
+  border: 1px solid black;
 }
+/* display: flex;
+margin: 30px 40px 0px 40px;
+flex-wrap: wrap;
+justify-content: space-around;
+align-content: space-around;
+row-gap: 20px;
+column-gap: 20px; */
+
 .vignette_hebergement_populaires {
   display: flex;
-  width: 340px;
+  /* width: 340px; */
+  width: 100%;
   height: 140px;
   padding: 5px;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
   border-radius: 15px;
-  background-color: white; 
+  background-color: white;
+  border: 1px solid black;
 }
 .description_populaires {
   display: flex;
   flex-direction: column;
   margin-left: 20px;
-  margin-top: 10px; 
-  height: 110px;
-  width: 155px;
+  margin-right: 10px;
+  margin-top: 10px;
+  height: 100%;
+  width: 65%;
+  /* height: 110px;
+  width: 155px; */
+  border: 1px solid black;
 }
 .vignette_hebergement_populaires p {
   margin-top: 5px;
+  width: 100%;
+  border: 1px solid black;
 }
 
 .photo_hebergement_populaires {
   border-radius: 15px 0px 0px 15px;
-  width: 127px;
-  height: 130px;
+  width: 35%;
+  height: 100%;
+  /* width: 127px;
+  height: 130px; */
   object-fit: cover;
 }
 /* *********************   Section activites   ********************* */
@@ -322,103 +363,103 @@ h1 {
   max-width: 1340px;
   /* border: 1px solid black; */
 }
-#liste_activites{
+#liste_activites {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
- justify-content:space-between;
- align-items:center;
+  justify-content: space-between;
+  align-items: center;
   height: 450px;
   margin-top: 25px;
   /* border: 1px solid black; */
 }
 /* - manipulation des vignettes - */
-.vignette_activites_grande{
-height: 445px;
-width: 300px;
-margin-right: 45px;
-border-radius: 15px;
+.vignette_activites_grande {
+  height: 445px;
+  width: 300px;
+  margin-right: 45px;
+  border-radius: 15px;
 }
-.photo_activite_grande{
+.photo_activite_grande {
   width: 300px;
   height: 390px;
   border-radius: 15px 15px 0px 0px;
   object-fit: cover;
 }
-.vignette_activites_grande p{
+.vignette_activites_grande p {
   margin: 20px 0px 20px 20px;
 }
 /*---*/
-.vignette_activites_moyenne{
+.vignette_activites_moyenne {
   height: 235px;
-width: 300px;
-margin-right: 45px;
-border-radius: 15px;
+  width: 300px;
+  margin-right: 45px;
+  border-radius: 15px;
 }
-.photo_activite_moyenne{
+.photo_activite_moyenne {
   width: 300px;
   height: 180px;
   border-radius: 15px 15px 0px 0px;
   object-fit: cover;
 }
-.vignette_activites_moyenne p{
+.vignette_activites_moyenne p {
   margin: 20px 0px 20px 20px;
 }
 /*---*/
-.vignette_activites_petite1{
+.vignette_activites_petite1 {
   height: 165px;
-width: 300px;
-margin-top: 40px;
-margin-right: 45px;
-border-radius: 15px;
+  width: 300px;
+  margin-top: 40px;
+  margin-right: 45px;
+  border-radius: 15px;
 }
-.photo_activite_petite1{
+.photo_activite_petite1 {
   width: 300px;
   height: 110px;
   border-radius: 15px 15px 0px 0px;
   object-fit: cover;
 }
-.vignette_activites_petite1 p{
+.vignette_activites_petite1 p {
   margin: 20px 0px 20px 20px;
 }
 /*---*/
-.vignette_activites_petite2{
+.vignette_activites_petite2 {
   height: 195px;
-width: 300px;
-border-radius: 15px;
+  width: 300px;
+  border-radius: 15px;
 }
-.photo_activite_petite2{
+.photo_activite_petite2 {
   width: 300px;
   height: 140px;
   border-radius: 15px 15px 0px 0px;
   object-fit: cover;
 }
-.vignette_activites_petite2 p{
+.vignette_activites_petite2 p {
   margin: 20px 0px 20px 20px;
 }
 /*---*/
-.vignette_activites_petite3{
+.vignette_activites_petite3 {
   height: 205px;
-width: 300px;
-margin-top: 40px;
-border-radius: 15px;
+  width: 300px;
+  margin-top: 40px;
+  border-radius: 15px;
 }
-.photo_activite_petite3{
+.photo_activite_petite3 {
   width: 300px;
   height: 150px;
   border-radius: 15px 15px 0px 0px;
   object-fit: cover;
 }
-.vignette_activites_petite3 p{
+.vignette_activites_petite3 p {
   margin: 20px 0px 20px 20px;
 }
 /*********************   footer   *********************/
-footer {  
+footer {
   font-size: 0.8rem;
-background-color: #f2f2f2;
+  background-color: #f2f2f2;
 }
-#footer_site{
-    display: flex;
+#footer_site {
+  display: flex;
   flex-wrap: wrap;
   margin-left: 30px;
 }
