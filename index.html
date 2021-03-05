@@ -18,7 +18,7 @@
 <body>
     <div id="bloc_page">
         <!-- *********************   header   ********************* -->
-        <header class="page_marge_gauche_droite">
+        <header >
             <div id="navigation">
                 <div id="bloc_logo">
                     <img src="images/logo/Reservia.svg" alt="Logo Reservia" />
@@ -32,7 +32,7 @@
                         </li>
                     </ul>
                 </nav>
-                <a href="" class="charte_bleu gras lien_sans_soulignement">S'inscrire</a>
+                <a href="" id="inscrire"   class="charte_bleu gras lien_sans_soulignement">S'inscrire</a>
             </div>
 
             <div id="presentation">
@@ -42,7 +42,7 @@
 
         </header>
 
-        <div id="bloc_section" class="page_marge_gauche_droite">
+        <div id="bloc_section" class="page_marge_gauche_droite" >
             <!-- *********************   Section filtres   ********************* -->
             <section id="recherche_filtres">
                 <form>
@@ -91,7 +91,7 @@
             <!-- *********************   liste hebergements   ********************* -->
             <section id="liste_hebergements">
                 <!-- *********************   hebergements   ********************* -->
-                <article id="hebergements">
+                <article id="hebergements" class="flex-item_hebergements">
                     <h1>Hébergement à Marseille</h1>
                     <div id="liste_vignette">
                         <div class="vignette_hebergement vignette_shadow">
@@ -211,7 +211,7 @@
                 </article>
 
                 <!-- *********************   populaires   ********************* -->
-                <aside id="hebergements_populaires">
+                <aside id="hebergements_populaires" class="flex-item_hebergements">
                     <div id="titre_populaires">
                         <h1>Les plus populaires</h1>
                         <i class="fas fa-chart-line"></i>
@@ -277,38 +277,38 @@
             <section id="activites">
                 <h1>Activités à Marseille</h1>
                 <div id="liste_activites">
-                    <div class="vignette_activites_grande vignette_shadow">
-                        <img class="photo_activite_grande"
+                    <div class="vignette_activites item_grid-1 vignette_shadow">
+                        <img class="photo_activite"
                             src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
                             alt="Photo hébergement" />
                         <p class="gras">Vieux Port</p>
                     </div>
-                    <div class="vignette_activites_moyenne vignette_shadow">
-                        <img class="photo_activite_moyenne"
+                    <div class="vignette_activites item_grid-2 vignette_shadow">
+                        <img class="photo_activite"
                             src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
                             alt="Photo hébergement" />
                         <p class="gras">Port de Pomègues</p>
                     </div>
-                    <div class="vignette_activites_petite1 vignette_shadow">
-                        <img class="photo_activite_petite1"
+                    <div class="vignette_activites item_grid-3 vignette_shadow">
+                        <img class="photo_activite"
                             src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
                             alt="Photo hébergement" />
                         <p class="gras">Îles du Frioul</p>
                     </div>
-                    <div class="vignette_activites_grande vignette_shadow">
-                        <img class="photo_activite_grande"
+                    <div class="vignette_activites item_grid-4 vignette_shadow">
+                        <img class="photo_activite"
                             src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
                             alt="Photo hébergement" />
                         <p class="gras">Parc National des Calanques</p>
                     </div>
-                    <div class="vignette_activites_petite2 vignette_shadow">
-                        <img class="photo_activite_petite2"
+                    <div class="vignette_activites item_grid-5 vignette_shadow">
+                        <img class="photo_activite"
                             src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
                             alt="Photo hébergement" />
                         <p class="gras">Notre-Dame-de-le-Garde</p>
                     </div>
-                    <div class="vignette_activites_petite3 vignette_shadow">
-                        <img class="photo_activite_petite3"
+                    <div class="vignette_activites item_grid-6 vignette_shadow">
+                        <img class="photo_activite"
                             src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
                             alt="Photo hébergement" />
                         <p class="gras">Parc Longchamp</p>
