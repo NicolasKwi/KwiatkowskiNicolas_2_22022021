@@ -28,7 +28,8 @@
                         <!-- accoler les <li> permet de suprimer l'espace entre eux-->
                         <!-- selection_portable sert à mettre en bleu le lien quand la page est en mode portable -->
                         <li><a href="#hebergements" class="lien_sans_soulignement selection_portable_active"
-                                title="Vers les hébergements">Hébergements</a></li>
+                                title="Vers les hébergements">Hébergements</a>
+                        </li>
                         <li><a href="#activites" class="lien_sans_soulignement selection_portable_desactive"
                                 title="Vers les activités">Activités</a>
                         </li>
@@ -47,6 +48,7 @@
         <div id="bloc_section" class="page_marge_gauche_droite">
             <!-- *******************************************   Section filtres   ******************************************* -->
             <section id="recherche_filtres">
+                <h2 class="cacher">Recherche hébergements</h2> <!-- titre caché et toujours non visible-->
                 <form>
                     <div id="recherche">
                         <div class="demi_cercle"><i class="fas fa-map-marker-alt"></i></div>
@@ -55,9 +57,6 @@
                         <div id="lancer_recherche"><i class="fas fa-search"></i>
                             <p class="gras">Rechercher</p>
                         </div>
-                        <!-- <input type="submit" class="gras" id="lancer_recherche" value="Rechercher" />
-                        <input type="submit" class="gras" id="lancer_recherche_icon" value="" /> -->
-                        <!-- <button >Rechercher</button> -->
                     </div>
                     <div id="filtres" class="gras">
                         <p id="filtres_label">Filtres</p>
@@ -96,15 +95,16 @@
             </section>
             <!-- ******************************************* section liste hebergements ******************************************* -->
             <section id="liste_hebergements">
+                <h2 class="cacher">Liste des Hébergements</h2> <!-- titre caché et toujours non visible-->
                 <!-- *********************   hebergements   ********************* -->
                 <article id="hebergements" class="flex-item_hebergements">
-                    <h1>Hébergement à Marseille</h1>
+                    <h2>Hébergement à Marseille</h2>
                     <div id="liste_vignette">
                         <div class="vignette_hebergement vignette_shadow">
                             <!-- vignette 1 -->
                             <img class="photo_hebergement"
                                 src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
-                                alt="Photo hébergement" />
+                                alt="Photo Auberge la Cannebière" />
                             <div class="description">
                                 <p class="gras">Auberge la Cannebière</p>
                                 <p class="petit">Nuit à partir de <span class="gras">25€</span></p>
@@ -122,7 +122,7 @@
                             <!-- vignette 2 -->
                             <img class="photo_hebergement"
                                 src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
-                                alt="Photo hébergement" />
+                                alt="Photo Hôtel du port" />
                             <div class="description">
                                 <p class="gras">Hôtel du port</p>
                                 <p class="petit">Nuit à partir de 52<span class="gras">€</span></p>
@@ -140,7 +140,7 @@
                             <!-- vignette 3 -->
                             <img class="photo_hebergement"
                                 src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
-                                alt="Photo hébergement" />
+                                alt="Photo Hôtel Les mouettes" />
                             <div class="description">
                                 <p class="gras">Hôtel Les mouettes</p>
                                 <p class="petit">Nuit à partir de 76<span class="gras">€</span></p>
@@ -159,7 +159,7 @@
                             <!-- vignette 4 -->
                             <img class="photo_hebergement"
                                 src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
-                                alt="Photo hébergement" />
+                                alt="Photo Hôtel de la mer" />
                             <div class="description">
                                 <p class="gras">Hôtel de la mer</p>
                                 <p class="petit">Nuit à partir de 46<span class="gras">€</span></p>
@@ -178,7 +178,7 @@
                             <!-- vignette 5 -->
                             <img class="photo_hebergement"
                                 src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
-                                alt="Photo hébergement" />
+                                alt="Photo Auberge le Panier" />
                             <div class="description">
                                 <p class="gras">Auberge le Panier</p>
                                 <p class="petit">Nuit à partir de <span class="gras">23€</span></p>
@@ -197,7 +197,7 @@
                             <!-- vignette 6 -->
                             <img class="photo_hebergement"
                                 src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
-                                alt="Photo hébergement" />
+                                alt="Photo Hôtel chez Amina" />
                             <div class="description">
                                 <p class="gras">Hôtel chez Amina</p>
                                 <p class="petit">Nuit à partir de 96<span class="gras">€</span></p>
@@ -211,7 +211,8 @@
                             </div>
                         </div>
                     </div>
-                    <p id="afficher_plus"><a href="" class="lien_sans_soulignement"><span class="gras">Afficher
+                    <p id="afficher_plus">
+                        <a href="" class="lien_sans_soulignement"><span class="gras">Afficher
                                 plus</span></a>
                     </p>
                 </article>
@@ -219,7 +220,7 @@
                 <!-- *********************   populaires   ********************* -->
                 <aside id="hebergements_populaires" class="flex-item_hebergements">
                     <div id="titre_populaires">
-                        <h1>Les plus populaires</h1>
+                        <h2>Les plus populaires</h2>
                         <i class="fas fa-chart-line"></i>
                     </div>
                     <div id="liste_hebergement_populaires">
@@ -227,7 +228,7 @@
                             <!-- vignette 1 -->
                             <img class="photo_hebergement_populaires"
                                 src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
-                                alt="Photo hébergement" />
+                                alt="Photo Hôtel le soleil du matin" />
                             <div class="description_populaires">
                                 <p class="gras">Hôtel le soleil du matin</p>
                                 <p class="petit">Nuit à partir de 128<span class="gras">€</span></p>
@@ -245,7 +246,7 @@
                             <!-- vignette 2 -->
                             <img class="photo_hebergement_populaires"
                                 src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
-                                alt="Photo hébergement" />
+                                alt="Photo Au cœur de l'eau Chambres d'hôtes" />
                             <div class="description_populaires">
                                 <p class="gras">Au cœur de l'eau Chambres d'hôtes</p>
                                 <p class="petit">Nuit à partir de 71<span class="gras">€</span></p>
@@ -263,7 +264,7 @@
                             <!-- vignette 3 -->
                             <img class="photo_hebergement_populaires"
                                 src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
-                                alt="Photo hébergement" />
+                                alt="Photo Hôtel Tout bleu et Blanc" />
                             <div class="description_populaires">
                                 <p class="gras">Hôtel Tout bleu et Blanc</p>
                                 <p class="petit">Nuit à partir de 68<span class="gras">€</span></p>
@@ -281,44 +282,42 @@
             </section>
             <!-- ******************************************* section activites ******************************************* -->
             <section id="activites">
-                <h1>Activités à Marseille</h1>
+                <h2>Activités à Marseille</h2>
                 <div id="liste_activites">
                     <div class="vignette_activites item_grid-1 vignette_shadow">
                         <img class="photo_activite"
                             src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
-                            alt="Photo hébergement" />
+                            alt="Photo Vieux Port" />
                         <p class="gras">Vieux Port</p>
                     </div>
                     <div class="vignette_activites item_grid-2 vignette_shadow">
                         <img class="photo_activite" src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
-                            alt="Photo hébergement" />
+                            alt="Photo Port de Pomègues" />
                         <p class="gras">Port de Pomègues</p>
                     </div>
                     <div class="vignette_activites item_grid-3 vignette_shadow">
                         <img class="photo_activite" src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
-                            alt="Photo hébergement" />
+                            alt="Photo Îles du Frioul" />
                         <p class="gras">Îles du Frioul</p>
                     </div>
                     <div class="vignette_activites item_grid-4 vignette_shadow">
                         <img class="photo_activite"
                             src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
-                            alt="Photo hébergement" />
+                            alt="Photo Parc National des Calanques" />
                         <p class="gras">Parc National des Calanques</p>
                     </div>
                     <div class="vignette_activites item_grid-5 vignette_shadow">
                         <img class="photo_activite"
                             src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
-                            alt="Photo hébergement" />
+                            alt="Photo Notre-Dame-de-le-Garde" />
                         <p class="gras">Notre-Dame-de-le-Garde</p>
                     </div>
                     <div class="vignette_activites item_grid-6 vignette_shadow">
                         <img class="photo_activite" src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
-                            alt="Photo hébergement" />
+                            alt="Photo Parc Longchamp" />
                         <p class="gras">Parc Longchamp</p>
                     </div>
                 </div>
-
-
             </section>
         </div>
         <!-- *******************************************   footer   ******************************************* -->
