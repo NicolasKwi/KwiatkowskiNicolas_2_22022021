@@ -19,7 +19,6 @@ body {
 }
 
 /* ******************************************* global ****************************************** */
-
 a {
   color: black;
 }
@@ -83,8 +82,7 @@ h1 , h2{
 }
 .vignette_hebergement:hover,
 .vignette_hebergement_populaires:hover,
-.vignette_activites:hover {
-  cursor: pointer;
+.vignette_activites:hover {  
   transform: scale(1.06);
   box-shadow: 2px 5px 10px #deebff;
 }
