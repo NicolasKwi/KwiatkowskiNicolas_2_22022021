@@ -73,10 +73,11 @@ h1 , h2{
   border-top: 2px solid #0065fc;
   color: #0065fc;
 }
-#lancer_recherche {
+#lancer_recherche {  
   cursor: pointer;
 }
 .checkbox_filtre:hover {
+  transform: scale(1.06);
   cursor: pointer;
   box-shadow: 2px 5px 10px rgb(240, 240, 240);
 }
