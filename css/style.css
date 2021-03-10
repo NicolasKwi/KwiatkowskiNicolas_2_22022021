@@ -573,14 +573,9 @@ footer a {
     margin-top: 0;
     padding-top: 20px;
     padding-bottom: 18px;
-  }
-  .selection_portable_desactive {
     border-bottom: 2px solid #f2f2f2;
   }
-  .selection_portable_active {
-    border-bottom: 2px solid #0065fc;
-    color: #0065fc;
-  }
+  
   #navigation nav a:hover {
     padding-top: 20px;
     padding-bottom: 18px;
